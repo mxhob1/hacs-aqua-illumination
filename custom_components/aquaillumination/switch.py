@@ -2,7 +2,7 @@ import logging
 import voluptuous as vol
 
 # Import the device class from the component that you want to support
-from homeassistant.components.switch import SwitchDevice, PLATFORM_SCHEMA
+from homeassistant.components.switch import SwitchEntity, PLATFORM_SCHEMA
 from homeassistant.const import CONF_HOST, CONF_NAME
 from homeassistant.exceptions import PlatformNotReady
 import homeassistant.helpers.config_validation as cv
@@ -30,7 +30,7 @@ async def async_setup_platform(hass, config, add_devices, discovery_info=None):
     add_devices(all_devices)
 
 
-class AIAutomatedScheduleSwitch(SwitchDevice):
+class AIAutomatedScheduleSwitch(SwitchEntity):
     """Representation of AI light schedule switch"""
 
     def __init__(self, device):

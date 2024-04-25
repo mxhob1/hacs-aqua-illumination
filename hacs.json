@@ -1,5 +1,6 @@
 {
-  "name": "My awesome thing",
+  "name": "Aqua Illumination",
   "content_in_root": false,
-  "filename": "aquaillumination/light.py"
+  "filename": "aquaillumination/light.py",
+  "render_readme": true
 }

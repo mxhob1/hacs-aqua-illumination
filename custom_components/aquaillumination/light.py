@@ -4,7 +4,7 @@ import voluptuous as vol
 
 # Import the device class from the component that you want to support
 from homeassistant.components.light import ( ATTR_BRIGHTNESS,
-    SUPPORT_BRIGHTNESS, Light, LIGHT_TURN_ON_SCHEMA,
+    SUPPORT_BRIGHTNESS, LightEntity, LIGHT_TURN_ON_SCHEMA,
     VALID_BRIGHTNESS)
 from homeassistant.exceptions import PlatformNotReady
 import homeassistant.helpers.config_validation as cv
@@ -36,7 +36,7 @@ async def async_setup_platform(hass, config, add_devices, discovery_info=None):
     add_devices(all_devices)
 
 
-class AquaIllumination(Light):
+class AquaIllumination(LightEntity):
     """Representation of an AquaIllumination light"""
 
     def __init__(self, light, channel):

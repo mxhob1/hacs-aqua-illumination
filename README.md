@@ -1,20 +1,8 @@
-# Home-Assistant Custom Components
-
-A proving ground for new compontents that I'm working on. The intention is to contribute them back to [Home Assistant](https://github.com/home-assistant/home-assistant) once they have been refined/tested.
-
-##### Component Overview
-* [AquaIllumination Lights](#aquaillumination-lights)
-* [Seneye Water Sensors](#seneye-water-sensors)
-* [uHoo Air Quality Monitor](#uhoo-air-quality-monitor)
-
-
-
-
-### AquaIllumination Lights
+# AquaIllumination Lights
 
 Support for a range of aquarium lights, from AquaIllumination.
 
-Based on top of one of a python modules I wrote, [AquaIPy](https://github.com/mcclown/AquaIPy). There is no documented API for AquaIllumination lights, so this has all had to be reverse engineered. Beta quality component, but still its use is at your own risk.
+Based on top of one of a python modules @mcclown wrote, [AquaIPy](https://github.com/mcclown/AquaIPy). There is no documented API for AquaIllumination lights, so this all had to be reverse-engineered.
 
 A brief rundown of features/caveats:
 
@@ -36,7 +24,7 @@ aquaillumination:
     name: dt ai
 ```
 
-I've been using this component with [this](https://github.com/thomasloven/lovelace-slider-entity-row) custom lovelace entity, which works pretty well. A sample lovelace configuration for this component is below, showing how multiple light entities are created.
+@mcclown was been using this component with [this](https://github.com/thomasloven/lovelace-slider-entity-row) custom lovelace entity. A sample lovelace configuration for this component is below, showing how multiple light entities are created.
 
 ```YAML
 

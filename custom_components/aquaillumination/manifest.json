@@ -4,6 +4,6 @@
   "documentation": "https://github.com/mxhob1/hacs-aqua-illumination/blob/master/README.md#aquaillumination-lights",
   "dependencies": [],
   "codeowners": ["@mxhob1"],
-  "requirements": ["https://github.com/mcclown/AquaIPy==2.0.1"],
+  "requirements": ["AquaIPy==2.0.1"],
   "version": "v1.0.2"
 }
